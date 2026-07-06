@@ -105,12 +105,11 @@ Write 5-7 lines that function as an "elevator pitch": a concise, compelling intr
 
 **Create 2-3 profile statement templates for your main role types:**
 
-<!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+**For Content Strategist / Content Manager roles:**
+> Content strategist with 8 years turning technical complexity into content people actually use - support documentation, incident communication, product announcements - now applying that craft to building Lightfall's voice from the ground up: blog, help center, and product messaging for an independent, privacy-first photography community. Combines writing discipline with the technical fluency to work directly with engineers rather than around them.
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For Technical Content Strategist / Content Ops roles:**
+> Technical content strategist with 8 years inside enterprise support and account management (Automattic, PostHog), where documentation and clear written communication were the product, not an afterthought. Reads production codebases well enough to write about them accurately, edits AI-generated content for voice and correctness, and treats docs-as-a-system rather than a pile of pages - currently building that system for Lightfall, an independent photography startup.
 
 ### Core Competencies / Skills Section (Best Practice)
 Reorder and emphasize based on the role. Use bold category labels.

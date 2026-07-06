@@ -1,8 +1,7 @@
-%% Example CV - [YOUR_NAME]
+%% Example CV - Nabaht Peters
 %% Comprehensive overview of all competencies, experience, and achievements.
 %% Use as a master reference when tailoring role-specific CVs.
 %%
-%% SETUP: Run /setup to populate this with your actual information.
 %% Compile with: lualatex main_example.tex
 %% (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors.)
 
@@ -24,18 +23,18 @@
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Nabaht Peters - CV},
     pdfpagemode=FullScreen,
 }
 \usepackage[scale=0.80]{geometry}
 \usepackage{import}
 
 % personal data
-\name{[First]}{[Last]}
-\address{[Your Address, City, Country]}{}{}
-\phone[mobile]{[+XX XXXXXXXXXX]}
-\email{[your.email@example.com]}
-\extrainfo{\href{[https://linkedin.com/in/your-profile]}{LinkedIn}, \href{[https://github.com/your-username]}{GitHub}}
+\name{Nabaht}{Peters}
+\address{Oceanside, CA, USA}{}{}
+\phone[mobile]{(949) 689-6257}
+\email{nabahtpeters@gmail.com}
+\extrainfo{\href{https://linkedin.com/in/nabaht-peters}{LinkedIn}}
 
 \begin{document}
 
@@ -46,7 +45,7 @@
 % ============================================================
 
 \vspace{6pt}
-\small{[Write a 3-5 line profile statement tailored to the role you're applying for. Focus on what makes you uniquely qualified. Example: "Data scientist with a PhD in [field] and X years of industry experience. Combines deep domain expertise in [domain] with strong applied machine learning and Python development skills. Experienced in developing end-to-end ML pipelines, from data ingestion to stakeholder-facing dashboards."]}
+\small{Content strategist with 8 years turning technical complexity into content people actually use: support documentation, incident communication, product announcements. Now applying that craft to building Lightfall's voice from the ground up (blog, help center, product messaging) for an independent, privacy-first photography community. Combines writing discipline with the technical fluency to work directly with engineers, read production codebases, and edit AI-generated content for accuracy and voice rather than working around the technical side of a product.}
 
 % ============================================================
 %     CORE COMPETENCIES
@@ -56,15 +55,15 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item \textbf{[Skill Category 1]}: [Specific skills, frameworks, tools. Be concrete.]
+\item \textbf{Content strategy \& writing}: Blog posts, newsletters, website copy, help center/knowledge base content, product announcements, incident postmortems
 
-\item \textbf{[Skill Category 2]}: [Specific skills, frameworks, tools.]
+\item \textbf{Technical documentation}: API reference guides, troubleshooting workflows, onboarding docs that measurably reduced support ticket volume
 
-\item \textbf{[Skill Category 3]}: [Specific skills, frameworks, tools.]
+\item \textbf{AI-assisted content production}: Editing and fact-checking AI-generated drafts for accuracy and voice; using Claude, Claude Code, and ChatGPT deliberately to scale output without losing quality control
 
-\item \textbf{[Skill Category 4]}: [Domain expertise, methods, approaches.]
+\item \textbf{Technical fluency}: SQL, REST APIs, caching, reading TypeScript/TSX and WordPress codebases well enough to write about them accurately
 
-\item \textbf{[Skill Category 5]}: [Tools, platforms, software.]
+\item \textbf{Cross-functional collaboration}: Filing precise GitHub issues/PRs and Jira tickets, working directly with engineers and founders on product and content decisions
 
 \end{itemize}
 
@@ -76,32 +75,66 @@
 \vspace{3pt}
 \begin{itemize}
 
-% --- Most Recent Role ---
-\item{\cventry{[YYYY--Present]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+% --- Lightfall ---
+\item{\cventry{2025--Present}{Co-Founder \& Content Lead / Content Strategist}{Lightfall}{Remote}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1 - be specific, use numbers where possible]
-    \item [Achievement or responsibility 2]
-    \item [Achievement or responsibility 3]
-    \item [Achievement or responsibility 4]
+    \item Co-built lightfall.photo with partner Nick Daugherty (Founder): an independent, VC-free, privacy-first photography community (web, iOS, Android; ~700 users) that blocks AI training on user photos and bans AI-generated images
+    \item Own content strategy end-to-end: blog posts, help center content, website copy, and product announcements (Photo of the Day, dark mode, notifications); newsletter in early planning
+    \item Edit and correct AI-generated content for accuracy and voice, using AI deliberately to scale output without losing quality control
+    \item File and maintain Jira issues for bugs and content gaps found while using the product; read the TypeScript/TSX monorepo directly to write accurate feature content
+    \item Wrote and ran a Nextdoor community post to promote the app, choosing a warm, transparent tone over polished marketing copy
 \end{itemize}}}
 
 \vspace{3pt}
 
-% --- Previous Role ---
-\item{\cventry{[YYYY--YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+% --- PostHog ---
+\item{\cventry{Feb 2026--May 2026}{Onboarding Specialist}{PostHog}{Remote}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1]
-    \item [Achievement or responsibility 2]
-    \item [Achievement or responsibility 3]
+    \item Owned onboarding and support for 190 startup accounts across five technical products, exceeding a 90\% retention target by 5 points with no formal product training
+    \item Built a SQL- and AI-assisted account-health workflow that surfaced configuration gaps and at-risk accounts proactively
+    \item Diagnosed a billing discrepancy caused by misclassified events in a partner integration, escalated to engineering, and secured a customer refund before it became a churn risk
+    \item Opened GitHub PRs against PostHog's public documentation to fix inaccuracies and close gaps; filed a customer-driven feature request the product team prioritized
 \end{itemize}}}
 
 \vspace{3pt}
 
-% --- Earlier Role ---
-\item{\cventry{[YYYY--YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+% --- Automattic: Special Projects ---
+\item{\cventry{2024--2026}{Technical Account Manager, WordPress Special Projects}{Automattic}{Remote}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1]
-    \item [Achievement or responsibility 2]
+    \item Delivered bespoke design, development, hosting, and phased feature rollouts for high-profile partner organizations, including a managed account for opensource.org (Open Source Initiative)
+    \item Took ownership of a technically complex, at-risk enterprise account; drove resolution of a backlog of REST API security gaps, performance issues, and a long-pending platform upgrade, rebuilding the relationship over several months
+    \item Trained new Technical Account Managers joining the Special Projects team
+    \item Wrote macros the team used to respond consistently during mass plugin-vulnerability events, and flagged cross-account issues to engineering before they spread
+\end{itemize}}}
+
+\vspace{3pt}
+
+% --- Automattic: WordPress VIP ---
+\item{\cventry{2020--2024}{Technical Account Manager, WordPress VIP}{Automattic}{Remote}{}{\vspace{1pt}
+\begin{itemize}
+    \item Supported a \$2M+ ARR, 20-account enterprise portfolio (TechCrunch, Airbnb, VentureBeat, MediaNews Group, Pedestrian Group), achieving net negative churn
+    \item Authored API reference guides, troubleshooting workflows, and onboarding documentation that measurably reduced support ticket volume
+    \item Led an 11-site enterprise migration off a competing CMS for a major newspaper group; flagged under-resourcing risk ahead of a separate publisher's platform migration
+    \item Prepared TechCrunch's infrastructure and agency coordination for its first live-streamed Disrupt conference in years
+\end{itemize}}}
+
+\vspace{3pt}
+
+% --- Automattic: Support Engineer -> Team Lead ---
+\item{\cventry{2018--2020}{Support Engineer \(\rightarrow\) Team Lead}{Automattic}{Remote}{}{\vspace{1pt}
+\begin{itemize}
+    \item Diagnosed production issues for enterprise WordPress customers using Kibana, New Relic, and WP-CLI
+    \item Authored onboarding and troubleshooting documentation that became standard training material for new hires
+    \item Promoted to Team Lead; coached engineers on debugging methodology and customer communication, raising team CSAT by 10 points
+\end{itemize}}}
+
+\vspace{3pt}
+
+% --- Earlier roles ---
+\item{\cventry{2016--2017}{Website Support Specialist \(\rightarrow\) Administrative Assistant}{Solution21 / James Publishing}{Remote}{}{\vspace{1pt}
+\begin{itemize}
+    \item Supported technical troubleshooting for healthcare-industry client websites (Solution21)
+    \item Managed billing, payment processing, and subscriptions for a legal publisher's eCommerce platform (James Publishing)
 \end{itemize}}}
 
 \end{itemize}
@@ -114,16 +147,22 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item{\cventry{[YYYY--YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-Thesis: ``[Thesis Title].'' [Brief description of research focus.]
-}}
+\item{\cventry{2011}{Paralegal Certificate}{University of California, Irvine}{Irvine, CA}{}{}}
 
 \vspace{3pt}
 
-\item{\cventry{[YYYY--YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-[Brief description or key topics.]
-}}
+\item{\cventry{2007}{Bachelor of Arts in English}{University of California, Irvine}{Irvine, CA}{}{}}
 
+\end{itemize}
+
+% ============================================================
+%     CERTIFICATIONS
+% ============================================================
+
+\section{Certifications}
+\vspace{1pt}
+\begin{itemize}
+\item{\textbf{Certified Customer Success Manager (CCSM), Level 2} -- SuccessHACKER (2022)}
 \end{itemize}
 
 % ============================================================
@@ -133,27 +172,7 @@ Thesis: ``[Thesis Title].'' [Brief description of research focus.]
 \section{Languages}
 \vspace{1pt}
 \begin{itemize}
-\item [Language 1] (native), [Language 2] (fluent), [Language 3] (intermediate).
-\end{itemize}
-
-% ============================================================
-%     PUBLICATIONS (optional)
-% ============================================================
-
-\section{Publications}
-\vspace{1pt}
-\begin{itemize}
-\item [Author(s)] ([Year]). [Title]. [Journal/Conference]. \href{[DOI_URL]}{DOI link}
-\end{itemize}
-
-% ============================================================
-%     HONORS AND AWARDS (optional)
-% ============================================================
-
-\section{Honors and Awards}
-\vspace{1pt}
-\begin{itemize}
-\item{\textbf{[Award Name]} -- [Event/Organization] ([Year]).}
+\item English (native).
 \end{itemize}
 
 % ============================================================

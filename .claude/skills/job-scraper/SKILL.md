@@ -1,7 +1,7 @@
 ---
 name: job-scraper
 description: >
-  Scrapes Danish job sites for new positions matching your profile. Deduplicates across runs.
+  Scrapes remote job sites (LinkedIn, hiring.cafe, 4dayweek.io) for new positions matching your profile. Deduplicates across runs.
   Triggers on: job scrape, find jobs, search jobs, new jobs, job search, scrape jobs, /scrape
 allowed-tools: Read, Write, Edit, Glob, Grep, WebFetch, WebSearch, Agent, AskUserQuestion
 ---
@@ -12,7 +12,7 @@ allowed-tools: Read, Write, Edit, Glob, Grep, WebFetch, WebSearch, Agent, AskUse
 
 ## How It Works
 
-This skill searches multiple Danish job sites using targeted queries based on your profile, deduplicates against previously seen jobs and the application tracker, and presents new matches with a quick fit assessment.
+This skill searches multiple remote-first job sites using targeted queries based on your profile, deduplicates against previously seen jobs and the application tracker, and presents new matches with a quick fit assessment.
 
 ## Invocation
 
@@ -43,9 +43,10 @@ Run **WebSearch** queries from `search-queries.md`. By default, run the top 3 pr
 If the user specified a focus area (e.g. "data science"), prioritize queries from that category.
 
 For each search:
-- Use `WebSearch` with site-specific queries (jobindex.dk, linkedin.com/jobs, karriere.dk, etc.)
-- Target your configured geographic area
+- Use `WebSearch` with site-specific queries (linkedin.com/jobs, hiring.cafe, 4dayweek.io, etc.)
+- Target fully remote roles with Pacific-timezone-compatible hours (see `search-queries.md` for the location filter)
 - Look for postings from the last 14 days
+- Note: hiring.cafe and 4dayweek.io both return 403 to direct WebFetch (bot-blocked), even on individual job pages - rely on WebSearch snippets for these two, and ask the user to paste the job description in if a fetch is needed later for `/apply`
 
 ### Step 2: Fetch & Parse
 

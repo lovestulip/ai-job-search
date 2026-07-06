@@ -16,9 +16,9 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** Content strategy and writing (blog, help center, docs, announcements), technical documentation, editing/QA of AI-generated content, cross-functional collaboration with engineers, Jira/GitHub workflows
+**Moderate match areas:** SQL, reading TypeScript/TSX codebases, REST APIs/caching concepts, SaaS onboarding and account-health thinking
+**Weak match areas:** Formal marketing positioning/demand-gen frameworks (actively learning, not yet expert), SEO, paid growth/performance marketing, people management
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for?
@@ -30,9 +30,9 @@ Does work history align with what they're looking for?
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Strong:** Technical writing/documentation, help center content, incident/status communication, editing AI-generated content, developer-tool and open-source-adjacent products
+**Moderate:** Blog/newsletter content, product marketing announcements, brand voice/positioning work (Lightfall is the first real rep, not 8 years of it)
+**Entry-level:** Formal content marketing/demand-gen roles, SEO-driven content roles, paid-channel content
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -47,10 +47,12 @@ Does the role and company culture match the behavioral profile?
 **Red flags to research:** Department disorganization, work dominated by maintenance over development, poor chemistry with leadership, culture mismatches. Check reviews, media coverage, LinkedIn connections, and network contacts for insider perspective.
 
 ### 4. Location & Logistics (Pass/Fail + Notes)
-- Within commute range: PASS
-- Remote with occasional office: PASS
+- Fully remote, any timezone that overlaps Pacific business hours: PASS
+- Fully remote but requires heavy overlap with a non-compatible timezone (e.g. all-hours-CET with no PT overlap): FLAG (discuss with user)
+- Remote with occasional/required office presence: FAIL (deal-breaker - fully remote is required)
 - Requires relocation: FAIL (deal-breaker)
-- Frequent international travel: FLAG (discuss with user)
+- Role is people-management (manages reports) rather than individual contributor: FAIL (deal-breaker)
+- Role is centered on high live-call volume (e.g. a phone-heavy support or sales queue) rather than written/async work: FLAG (discuss with user - not an automatic fail, but a friction point to weigh against the rest of the role)
 
 ### 5. Career Alignment & Motivation (0-100)
 Does this role advance career goals and contain tasks that energize?
@@ -63,19 +65,19 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+- Pivot from technical support/account management into a Content Strategist role that uses both the writing craft and the technical fluency built over 8 years
+- Own a product's content system end-to-end (docs, help center, blog, announcements), not just execute a content calendar written by someone else
+- Build a track record as a paid Content Strategist that stands independently of the unpaid Lightfall work
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
-- Non-task factors: leadership style, department culture, company values, degree of autonomy
+- Tasks that energize: writing and editing (docs, blog, help center, announcements), digging into a technical system to explain it accurately, catching and fixing errors (in content or in a product), working directly with engineers/founders
+- Tasks that drain: high-volume live call queues, people management, roles where content is purely templated/formulaic with no ownership over voice or strategy
+- Non-task factors: async-first culture, trust-based/light-touch management, small or founder-led teams
 
 **Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+- **Security**: Actively job searching; Lightfall is unpaid, so a paid role is a near-term priority, not optional
+- **Flexibility**: Fully remote required; needs working hours that overlap Pacific business hours, but is open to companies based anywhere in the world on that basis
+- **Professional development**: Wants to build formal content strategy/positioning experience and credentials to back up the pivot from technical support/CS into content
 
 ### 6. Salary Benchmark (Optional)
 

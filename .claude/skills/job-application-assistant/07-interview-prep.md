@@ -10,44 +10,47 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 
 ## Ready-Made STAR Examples
 
-<!-- These are populated by /setup from your actual experience. Below are templates showing the format. -->
+### 1. PostHog billing discrepancy (technical judgment under ambiguity)
+**S:** Ramping as the only Onboarding Specialist across 190 startup accounts at PostHog, with no formal product training, one customer's OEM integration was generating unexpected charges.
+**T:** Figure out whether the charges were legitimate, and protect the customer if they weren't - before the customer noticed and escalated.
+**A:** Traced the issue through JSON trace analysis, identified that GET requests were being misclassified as billable LLM events, escalated to engineering with the specifics, and pushed the fix and a refund through for the affected billing period.
+**R:** The customer was refunded and the underlying misclassification was fixed, preventing a churn risk before it became visible to the customer.
+**Use for:** "Tell me about a time you caught a problem before anyone else noticed", "Tell me about using data or technical skills to solve a customer problem"
 
-### 1. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT - what was happening, what was the problem]
-**T:** [YOUR RESPONSIBILITY - what you specifically needed to do]
-**A:** [WHAT YOU DID - specific actions, tools, methods]
-**R:** [OUTCOME - measurable results, adoption, impact]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 2. Editing AI-generated content at Lightfall (content quality and rigor)
+**S:** As Lightfall's sole content owner, using AI tools to draft blog posts, help center articles, and announcements faster, some AI-generated drafts contained factual errors or drifted from the brand's voice.
+**T:** Scale content output using AI without letting quality or accuracy slip.
+**A:** Built a personal review discipline: fact-checking every AI-drafted claim against the actual product, rewriting for Lightfall's warm, direct voice, and treating AI output as a first draft to interrogate rather than publish as-is.
+**R:** Faster content production with no drop in accuracy or voice consistency; now formalizing that review habit into a documented content system.
+**Use for:** "How do you use AI in your work", "Tell me about maintaining quality while working faster", "Walk me through your content process"
 
-### 2. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 3. At-risk enterprise account turnaround (rebuilding trust, root-cause work)
+**S:** Inherited a technically complex, at-risk enterprise account at Automattic after a period of eroded customer trust, with a backlog of REST API security gaps, performance issues, and a long-stalled platform upgrade.
+**T:** Rebuild the relationship by resolving the underlying technical backlog, not just responding to tickets faster.
+**A:** Audited the backlog, worked with engineering to prioritize and resolve the security and performance issues, pushed the platform upgrade through, and communicated transparently with the customer throughout.
+**R:** The relationship stabilized over several months into an ongoing, trusted account.
+**Use for:** "Tell me about rebuilding trust with a difficult stakeholder", "Tell me about resolving a technical backlog", "Tell me about turning around a failing relationship"
 
-### 3. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
-
-<!-- Add more STAR examples as needed. Aim for 4-6 covering different competencies. -->
+### 4. Documentation that reduced ticket volume (writing with measurable impact)
+**S:** Enterprise publisher accounts on WordPress VIP were generating repeat support tickets for issues that were only understood as tribal knowledge, never written down.
+**T:** Reduce the repeat-ticket burden by turning that tribal knowledge into documentation people would actually use.
+**A:** Authored API reference guides, troubleshooting workflows, and onboarding documentation targeted at the specific recurring issues seen in the support queue.
+**R:** Measurably reduced support ticket volume, and the documentation became standard training material for new hires.
+**Use for:** "Tell me about the impact your writing has had", "Tell me about spotting a recurring problem and building a system to fix it"
 
 ## Common Tough Questions
 
 ### "Why did you leave [previous company]?"
-> [PREPARE YOUR ANSWER - be honest, forward-looking, no negativity about former employer]
+> I'm moving toward content strategy as my primary focus rather than something I do alongside account management. Automattic gave me 8 years of technical depth and the writing habit that led me to build Lightfall's content from scratch; I'm looking for a role where content is the actual mandate, not a side effect of a support or account role.
 
 ### "You don't have [specific skill/experience]."
-> [PREPARE YOUR ANSWER - acknowledge the gap, bridge to adjacent experience, show willingness to learn]
+> If it's formal content marketing or demand-gen experience: I don't have a marketing title behind me yet, but I've been the sole writer turning technical complexity into docs, announcements, and help content for 8 years, and I'm actively studying positioning and demand-gen frameworks while building Lightfall's marketing from zero. I'd rather point to what I've shipped than a job title.
 
 ### "Where do you see yourself in 5 years?"
-> [PREPARE YOUR ANSWER - show ambition aligned with the role's growth path]
+> Owning content strategy end-to-end for a product I believe in - not just executing a calendar, but shaping how a product talks about itself, the way I've been doing for Lightfall - at a company where content is treated as a real lever rather than an afterthought.
 
 ### "What's your biggest weakness?"
-> [PREPARE YOUR ANSWER - genuine weakness with concrete mitigation strategy]
+> I've historically undersold my own technical contributions - describing something I built or debugged in hedged, minimizing language instead of stating it plainly. I've been actively correcting this by stating what I did and its outcome directly, with evidence, rather than qualifying it.
 
 ### "Why this company specifically?"
 > Customize per company. Must reference: specific projects, company values, market position, or team structure. Never give a generic answer.
