@@ -93,7 +93,7 @@ Remote
 - Community-run, privacy-first, non-VC-backed products
 
 ### Software & Tools
-Zendesk, Linear, Jira, Slack, Salesforce, Gainsight, GitHub (issues, PRs), Grafana, Kibana, New Relic, WP-CLI, Stripe, WooCommerce, VS Code, Claude Code
+Zendesk, Linear, Jira, Slack, Salesforce, Gainsight, GitHub (issues, PRs), Grafana, Kibana, New Relic, WP-CLI, Stripe, WooCommerce, VS Code, Claude Code, Grammarly, Hemingway Editor
 
 ## Publications
 None.

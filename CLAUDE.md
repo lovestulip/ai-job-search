@@ -68,7 +68,7 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 - **Primary:** Content strategy and writing (blog, newsletter, help center, product announcements, incident postmortems), technical documentation, editing/QA of AI-generated content
 - **Secondary:** SQL, GitHub (issues, PRs), Jira, REST APIs and caching concepts, reading TypeScript/TSX codebases well enough to write about them accurately, applied LLM workflows (Claude, Claude Code, ChatGPT) for content production and technical triage
 - **Domain:** Open-source software (WordPress) and developer-tool ecosystems (PostHog, Lightfall), enterprise publisher/media accounts, community-run and privacy-first products
-- **Software:** Zendesk, Linear, Jira, Slack, Salesforce, Gainsight, Grafana, Kibana, New Relic, WP-CLI, Stripe, WooCommerce, VS Code
+- **Software:** Zendesk, Linear, Jira, Slack, Salesforce, Gainsight, Grafana, Kibana, New Relic, WP-CLI, Stripe, WooCommerce, VS Code, Grammarly, Hemingway Editor
 
 ### Certifications
 - **Certified Customer Success Manager (CCSM), Level 2** - SuccessHACKER - completed 2022

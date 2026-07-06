@@ -46,7 +46,7 @@ For each search:
 - Use `WebSearch` with site-specific queries (linkedin.com/jobs, hiring.cafe, 4dayweek.io, etc.)
 - Target fully remote roles with Pacific-timezone-compatible hours (see `search-queries.md` for the location filter)
 - Look for postings from the last 14 days
-- Note: hiring.cafe and 4dayweek.io both return 403 to direct WebFetch (bot-blocked), even on individual job pages - rely on WebSearch snippets for these two, and ask the user to paste the job description in if a fetch is needed later for `/apply`
+- Note: hiring.cafe, 4dayweek.io, and individual LinkedIn `/jobs/view/` pages all return 403 to direct WebFetch (bot-blocked). This means **posting status (open/closed) cannot be verified before presenting a result** - WebSearch snippets do not reliably indicate whether a listing has expired. Always caveat presented results as unverified for open/closed status, and when the user reports a batch of results as closed/stale, mark them `status: "closed"` in `seen_jobs.json` immediately so they are never resurfaced, and tighten future searches (prefer queries that surface an explicit recent posting date in the snippet).
 
 ### Step 2: Fetch & Parse
 
