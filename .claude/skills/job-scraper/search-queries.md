@@ -1,70 +1,68 @@
 # Search Queries for Job Scraper
 
-<!-- SETUP: Customize these queries based on your skills, target roles, and location -->
-
 ## Search Sites
 
-Primary (Danish job market):
-- **jobindex.dk** - largest Danish job board
-- **linkedin.com/jobs** - LinkedIn job listings (filter: Denmark / your city)
-- **karriere.dk** - IDA's job board (engineering/science roles)
-- **jobfinder.dk** - another major Danish job board
-- **akademikernes.dk** - academic union job board
+Primary (remote-first, US/global):
+- **linkedin.com/jobs** - filter to Remote; broadest general coverage
+- **hiring.cafe** - remote-focused aggregator pulling from Greenhouse, Lever, Workday, BambooHR, and company career pages. Direct WebFetch on hiring.cafe returns 403 (bot-blocked), including individual `/viewjob/` pages - use `WebSearch site:hiring.cafe` to find postings, then ask the user to paste the job description if a direct fetch is needed for `/apply`.
+- **4dayweek.io** - jobs at companies offering a 4-day week, 9-day fortnight, or flexible/reduced hours, fully remote or remote-friendly. Same fetch limitation as hiring.cafe: WebFetch returns 403 on both the site and individual job pages, so rely on `WebSearch site:4dayweek.io` and paste-in job descriptions for `/apply`.
 
 Secondary (company career pages via Google):
+- `site:greenhouse.io` / `site:lever.co` / `site:ashbyhq.com` searches combined with role keywords, for direct ATS listings outside the aggregators above
 - Direct Google searches with `site:` filters for known target companies
 
 ## Query Categories
 
-Queries are grouped by priority. Each query should be combined with your location terms (e.g. "Copenhagen", "Sjælland", "Hovedstaden") where the site supports it.
+Queries are grouped by priority. All roles must be fully remote - do not include queries that assume a specific city/commute radius.
 
-### Priority 1: [YOUR_PRIMARY_ROLE_TYPE]
+### Priority 1: Content Strategist
 
-These match your strongest and most desired career direction.
-
-```
-site:jobindex.dk "[YOUR_PRIMARY_JOB_TITLE]" [YOUR_CITY]
-site:jobindex.dk "[YOUR_KEY_SKILL]" [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_PRIMARY_JOB_TITLE]" [YOUR_COUNTRY]
-```
-
-### Priority 2: [YOUR_DOMAIN_EXPERTISE]
-
-These match your domain expertise.
+These match the primary target direction.
 
 ```
-site:jobindex.dk [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] OR [YOUR_REGION]
-site:jobindex.dk [YOUR_DOMAIN_KEYWORD_2] [YOUR_COUNTRY]
-site:linkedin.com/jobs [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] [YOUR_COUNTRY]
+site:linkedin.com/jobs "Content Strategist" remote
+site:hiring.cafe "Content Strategist" remote
+site:4dayweek.io "Content Strategist"
+"Content Strategist" remote SaaS OR "developer tools"
 ```
 
-### Priority 3: [YOUR_ADJACENT_ROLE_TYPE]
+### Priority 2: Content Manager / Marketing Content Manager
 
-Adjacent roles you could pivot into.
-
-```
-site:jobindex.dk "[YOUR_ADJACENT_TITLE_1]" [YOUR_KEY_SKILL] [YOUR_CITY]
-site:jobindex.dk "[YOUR_ADJACENT_TITLE_2]" [YOUR_KEY_SKILL] [YOUR_CITY]
-```
-
-### Priority 4: Broader Technical / Consulting
-
-Wider net for general technical roles.
+More marketing-adjacent framing of the same direction.
 
 ```
-site:jobindex.dk [YOUR_KEY_SKILL] developer [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_KEY_SKILL] developer" [YOUR_CITY]
-site:jobindex.dk "technical consultant" [YOUR_DOMAIN] [YOUR_CITY]
+site:linkedin.com/jobs "Content Manager" remote
+site:linkedin.com/jobs "Marketing Content Manager" remote
+site:hiring.cafe "Content Manager" remote
+"Content Manager" remote startup
+```
+
+### Priority 3: Technical Content Strategist / Content Ops
+
+Leans on the technical support and documentation background.
+
+```
+site:linkedin.com/jobs "Technical Content" remote
+site:linkedin.com/jobs "Content Ops" OR "Documentation Strategist" remote
+"Technical Writer" OR "Technical Content Strategist" remote SaaS
+site:hiring.cafe "Documentation" content remote
+```
+
+### Priority 4: Reduced-hours / 4-day work week (any of the above titles)
+
+```
+site:4dayweek.io/remote-jobs content
+site:4dayweek.io "Content Strategist" OR "Content Manager"
 ```
 
 ## Location Filter
 
-When evaluating results, verify the job location is within reasonable commute distance from your home. Define acceptable areas:
-- [YOUR_CITY] and surrounding areas
-- [ACCEPTABLE_AREA_1]
-- [ACCEPTABLE_AREA_2]
-- [BORDERLINE_AREA] (borderline - ~X min by transit)
-- [TOO_FAR_AREA] (too far)
+All roles must be fully remote. Location isn't a commute radius here, it's timezone overlap with Pacific business hours (roughly 9am-5pm PT) and whether the role is genuinely individual-contributor (not people management):
+
+- **Ideal:** Remote, company based anywhere in the Americas (PT, MT, CT, ET) - full or near-full overlap
+- **Acceptable:** Remote, company based anywhere in the world, as long as the posting doesn't require core hours entirely outside a reasonable PT overlap window
+- **Borderline:** Remote but requires most meetings in European business hours (some PT-morning overlap only) - flag and ask before ruling out
+- **Too far / fail:** Requires relocation, requires regular office presence, or the role is people-management rather than individual-contributor
 
 ## Date Filter
 
@@ -73,4 +71,5 @@ Only include jobs posted within the last 14 days, or with an application deadlin
 ## Adapting Queries
 
 If the user specifies a focus area, select queries from the matching category and also generate 2-3 custom queries for that focus. For example:
-- "/scrape [focus_area]" -> relevant category queries + custom focus-specific queries
+- "/scrape 4-day week" -> Priority 4 queries + custom focus-specific queries
+- "/scrape technical content" -> Priority 3 queries + custom focus-specific queries

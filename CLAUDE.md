@@ -1,10 +1,7 @@
-# Job Application Assistant for [YOUR_NAME]
-
-<!-- SETUP: This file is populated by running /setup -->
-<!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
+# Job Application Assistant for Nabaht Peters
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for [YOUR_NAME], helping with:
+This repo is a job application workspace. Claude acts as a career advisor and application assistant for Nabaht Peters, helping with:
 1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
 2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
 3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
@@ -13,68 +10,97 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ## Candidate Profile
 
-<!-- This section is auto-populated by /setup. You can also fill it in manually. -->
-
 ### Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_CITY], [YOUR_COUNTRY] ([YOUR_COMMUTE_CONSTRAINTS])
-- **Languages:** [YOUR_LANGUAGES]
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **LinkedIn headline:** "[YOUR_LINKEDIN_HEADLINE]"
+- **Name:** Nabaht Peters
+- **Location:** Oceanside, CA, USA
+- **Languages:** English (native)
+- **Status:** Actively job searching for a remote Content Strategist role. Currently co-building Lightfall.photo (unpaid, co-founder/Content Lead) while searching.
+- **LinkedIn headline:** "Content Strategist - turning 8 years of technical support and account work into clear, trusted content"
+- **Remote constraints:** Fully remote required (no relocation, no regular office presence). Open to roles based anywhere as long as working hours overlap with Pacific time business hours.
 
 ### Education
-<!-- List your degrees, most recent first -->
-- **[DEGREE_LEVEL] in [FIELD]** ([YEAR_START]-[YEAR_END]) - [INSTITUTION]
-  - Thesis: "[THESIS_TITLE]"
-  - Topics: [KEY_TOPICS]
+- **Bachelor of Arts in English** (2007) - University of California, Irvine
+- **Paralegal Certificate** (2011) - University of California, Irvine
 
 ### Professional Experience
-<!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+
+- **Co-Founder & Content Lead / Content Strategist** (2025 - Present, unpaid) - **Lightfall** (lightfall.photo) (Remote)
+  - Co-built Lightfall with partner Nick Daugherty (Founder): an independent, VC-free, privacy-first photography community (web + iOS/Android, ~700 users) that blocks AI training on user photos, bans AI-generated images, and gives users algorithm-free feeds and full data ownership
+  - Own content strategy end-to-end: blog posts, help center content, website copy, and product announcements (Photo of the Day, dark mode, notifications); planning a newsletter (Beehiiv and/or WordPress)
+  - Edit and correct AI-generated content for accuracy and voice, using AI tools deliberately to scale output without losing quality control
+  - File and maintain Jira issues for bugs and content gaps spotted while using the product; give the developer direct feedback from a content/UX lens
+  - Wrote and ran a Nextdoor community post to promote the app, choosing a warm, transparent, "neighbor-first" tone over polished marketing copy
+  - Explore the product's TypeScript/TSX monorepo (packages/api, packages/frontend) directly to understand technical context before writing about features
+  - Thinking through documentation as a long-term system, and studying positioning/demand-gen frameworks to build a marketing strategy
+
+- **Onboarding Specialist** (Feb 2026 - May 2026) - **PostHog** (Remote)
+  - Owned onboarding and support for 190 startup accounts across five technical products (Analytics, Session Replay, Feature Flags, A/B Testing, Data Warehouse), exceeding a 90% retention target by 5 points with no formal product training
+  - Built a SQL- and AI-assisted account-health workflow that surfaced configuration gaps and at-risk accounts proactively
+  - Diagnosed a billing discrepancy caused by misclassified events in a partner integration, escalated to engineering, and secured a customer refund before it became a churn risk
+  - Opened GitHub PRs against PostHog's public documentation to fix inaccuracies and close gaps, and filed a customer-driven feature request that the product team acknowledged and prioritized
+  - Short tenure (about 3 months): the role was under-supported and should not be weighted heavily against 8 years of prior, more substantial experience at Automattic
+
+- **Technical Account Manager, WordPress Special Projects (Team51)** (2024 - 2026) - **Automattic** (Remote)
+  - Automattic's internal agency team, delivering bespoke design, development, hosting, and phased feature rollouts for high-profile partner organizations, including opensource.org (Open Source Initiative)
+  - Took ownership of a technically complex, at-risk enterprise account after a period of eroded trust; resolved a backlog of REST API security gaps, performance issues, and a long-pending platform upgrade, rebuilding the relationship over several months
+  - Trained new Technical Account Managers joining the Special Projects team
+  - Wrote macros the team used to respond consistently during mass plugin-vulnerability events, and flagged a cross-account Jetpack Search compatibility issue to engineering before it spread
+  - Served as an escalation point and communications lead during outages and security incidents
+
+- **Technical Account Manager, WordPress VIP** (2020 - 2024) - **Automattic** (Remote)
+  - Supported a $2M+ ARR, 20-account enterprise portfolio (TechCrunch, Airbnb, VentureBeat, MediaNews Group, Pedestrian Group), achieving net negative churn by recommending expansion only when it matched customer outcomes
+  - Authored API reference guides, troubleshooting workflows, and onboarding documentation that measurably reduced support ticket volume
+  - Led an 11-site enterprise migration off a competing CMS for a major newspaper group, and flagged under-resourcing risk ahead of a separate publisher's platform migration
+  - Prepared TechCrunch's infrastructure and agency coordination for its first live-streamed Disrupt conference in years
+
+- **Support Engineer -> Team Lead** (2018 - 2020) - **Automattic** (Remote)
+  - Worked a live support queue for enterprise WordPress customers, diagnosing production issues using Kibana, New Relic, and WP-CLI
+  - Authored onboarding and troubleshooting documentation that became standard training material for new hires
+  - Promoted to Team Lead; coached engineers on debugging methodology and customer communication, raising team CSAT by 10 points
+
+- **Website Support Specialist** (Jan 2017 - Jun 2017) - **Solution21** (Remote)
+  - Supported technical troubleshooting and ongoing maintenance for healthcare-industry client websites
+
+- **Administrative Assistant** (2016 - 2017) - **James Publishing**
+  - Managed billing, payment processing, subscriptions, and shipping logistics for a legal publisher's eCommerce platform
 
 ### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
+- **Primary:** Content strategy and writing (blog, newsletter, help center, product announcements, incident postmortems), technical documentation, editing/QA of AI-generated content
+- **Secondary:** SQL, GitHub (issues, PRs), Jira, REST APIs and caching concepts, reading TypeScript/TSX codebases well enough to write about them accurately, applied LLM workflows (Claude, Claude Code, ChatGPT) for content production and technical triage
+- **Domain:** Open-source software (WordPress) and developer-tool ecosystems (PostHog, Lightfall), enterprise publisher/media accounts, community-run and privacy-first products
+- **Software:** Zendesk, Linear, Jira, Slack, Salesforce, Gainsight, Grafana, Kibana, New Relic, WP-CLI, Stripe, WooCommerce, VS Code
 
 ### Certifications
-<!-- List relevant certifications with dates -->
-- **[CERTIFICATION_NAME]** - [HOURS]h - completed [DATE]
+- **Certified Customer Success Manager (CCSM), Level 2** - SuccessHACKER - completed 2022
 
 ### Publications
-<!-- List peer-reviewed publications, if any -->
-- [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL].
+- None
 
 ### Awards
-<!-- List relevant awards, hackathons, competitions -->
-- [AWARD_NAME] - [EVENT] ([YEAR])
+- None
 
 ### Behavioral Profile
-<!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
+- **Detail-oriented editor** - catches inconsistencies and errors that others miss, whether in a billing configuration or in AI-generated copy
+- **Async-first communicator** - prefers clear, written, heads-down work over frequent live calls; communicates well in fully distributed teams
+- **Trusted-advisor style** - builds trust through honest, transparent communication; a Nextdoor post she wrote deliberately favored a warm, neighbor-first tone over polished marketing language
+- **Strengths:** Technical fluency paired with writing craft; cross-functional collaboration with engineers; thorough before acting (reviews and understands changes before approving them)
+- **Growth areas:** Tends to underestimate her own technical judgment relative to what she's actually capable of; working on stating technical contributions plainly and confidently rather than hedging them
+- **Thrives in:** Individual-contributor roles (not people management), async/remote-first teams, small or founder-led teams where content ownership is real rather than purely execution of someone else's brief
 
 ### What Excites You
-<!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
+- Turning technical complexity into content that people actually use (docs, help center, onboarding material)
+- Building a product's voice and content system from the ground up, as with Lightfall
+- Working closely with engineers and founders rather than being handed a content calendar
 
 ### Target Sectors
-<!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
+- Developer tools / SaaS: PostHog-style analytics and dev-tool companies
+- Privacy-first / independent / bootstrapped products (non-VC-backed, mission-driven)
+- Media, publishing, and open-source-adjacent companies
 
 ### Deal-breakers
-<!-- Hard constraints on job search -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+- Not fully remote (requires relocation or regular office presence)
+- People-management responsibilities (prefers individual-contributor scope)
+- Roles centered on live call volume rather than written/async work
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)
